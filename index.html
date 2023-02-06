@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+  <header>
+    <nav>
+      <section>
+        <div>
+          <i class='bx bx-menu'></i>
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <ul class="hide">
+          <li><a href="www.amazon.com">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+      <div>
+        <img src="images/icon-cart.svg" class="basket" alt="cart">
+        <img src="images/image-avatar.png" alt="avatar" width="40px">
+        <div class="disp"></div>
+        <div class="cart cartss">
+          <div class="const-div">
+            <p class="const">Cart</p>
+            <button class="close-btn">X</button>
+          </div>
+          <hr>
+          <div class="items">
+            <div class="body">
+            </div>
+            <p class="empty">Your cart is empty</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <hr class="heaD">
+  <main>
+    <section class="sec1">
+      <div class="div1">
+        <img src="images/image-product-1.jpg" alt="shoe" class="main-img">
+        <div class="mobile-controls">
+          <button class="btn-fow"><</button>
+          <button class="btn-bac">></button>
+        </div>
+      </div>
+      <div class="div2">
+        <img src="images/image-product-1-thumbnail.jpg" alt="prod1" class="img1 tog">
+        <img src="images/image-product-2-thumbnail.jpg" alt="prod2" class="img2 tog">
+        <img src="images/image-product-3-thumbnail.jpg" alt="prod3" class="img3 tog">
+        <img src="images/image-product-4-thumbnail.jpg" alt="prod4" class="img4 tog">
+      </div>
+    </section>
+    <section class="sec2">
+      <div class="div1">
+        <h3>SNEAKER COMPANY</h3>
+        <h2 class="h2">Fall Limited Edition Sneakers</h2>
+      </div>
+      <div class="div2">
+        <p>These low-profile sneakers are your perfect
+          casual wear companion. Featuring a durable rubber 
+          outer sole, they'll withstand everything
+          the weather can offer
+        </p>
+        <section>
+          <div>
+            <p class="black">$125.00</p>
+            <p class="orange">50%</p>
+          </div>
+          <p class="gray">$250.00</p>
+        </section>
+      </div>
+      <div class="div3">
+        <div>
+          <img src="images/icon-minus.svg" class="minus cursor" alt="minus" height="5px">
+          <p class="item-count cursor">0</p>
+          <img src="images/icon-plus.svg" alt="plus" class="add cursor">
+        </div>
+        <button class="add-btn">
+          <i class='bx bx-cart-alt'></i>Add to cart
+        </button>
+      </div>
+    </section>
+  </main>
+  
+<script src="script.js"></script>
+</body>
+</html>

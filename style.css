@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+hr.heaD { display: none; }
+body {overflow-x: scroll;}
+header {
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+} 
+nav section ul {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  background: white;
+  height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  left: -100%;
+  width: 50%;
+}
+nav section ul.active {
+  left: 0;
+}
+nav section ul li a {
+  color: black;
+}
+nav section div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.bx-menu {
+  /* display: initial; */
+  position: relative;
+  top: 2px;
+  font-size: 28px;
+}
+nav div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+nav div .basket {position: relative;}
+nav div .disp {
+  position: absolute;
+  background: hsl(26, 100%, 55%);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  top: 0;
+  left: 6px;
+  display: none;
+}
+nav div .cart .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cart {
+  font-family: 'Kumbh Sans', sans-serif;
+  position: absolute;
+  width: 300px;
+  background: white;
+  top: 70px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.cartss {
+  display: none;
+  transition: all 2s ease;
+}
+.cart .const { align-self: flex-start;
+ padding: 20px 20px 0 20px;}
+ .const-div {
+  display: flex;
+  position: relative;
+  width: 100%;
+ }
+.const-div button {
+  background-color: hsl(26, 100%, 55%);
+  position: absolute;
+  bottom: 2px;
+  right: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+}
+.cart hr {
+  width: 100%;
+  border-top: none;
+}
+.cart .items {
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+main {
+  width: 100%;
+}
+.sec1 .div1 {
+  position: relative;
+} 
+.sec1 .div1 .mobile-controls {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+}
+.mobile-controls button {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  border: none;
+  background: white;
+  border-radius: 100%;
+}
+.btn-fow {
+  position: relative;
+  left: 15px;
+}
+.btn-bac {
+  position: relative;
+  right: 15px;
+}
+.sec1 .div1 img {
+  width: 100%;
+  height: 300px;
+}
+.sec1 .div2 { display: none; }
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.sec2 .div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.sec2 .div1 h3 { color: hsl(26, 100%, 55%) }
+.sec2 .div2 {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Kumbh Sans', sans-serif;
+  gap: 20px;
+}
+.sec2 .div2 section { 
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec2 .div2 section div { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.black { font-weight: bold; font-size: 24px;}
+.orange { color: hsl(26, 100%, 55%);
+   background: hsl(25, 100%, 94%);
+  padding: 3px; border-radius: 5px;}
+.gray {
+  text-decoration-line: line-through;
+  color: hsl(219, 9%, 45%);
+}
+.sec2 .div3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sec2 .div3 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: hsl(220, 14%, 75%);
+  border-radius: 5px;
+}
+.sec2 .div3 div p { font-weight: 600;}
+.sec2 .div3 button {
+  padding: 10px;
+  background: hsl(26, 100%, 55%);
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: large;
+}
+.sec2 .div3 button .bx-cart-alt {
+  font-size: larger;
+}
+.smallI {
+  width: 15%;
+  border-radius: 10px;
+}
+.divI {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.imgP {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+.headerr { font-size: 14px;}
+.btnC {
+  width: 90%;
+  padding: 10px;
+  background: hsl(26, 100%, 55%);
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+}
+
+
+
+@media  screen and (min-width: 768px) {
+  hr.head{ display: none; 
+    width: 100%;}
+body {overflow-x: scroll;}
+.bx, nav section div img, nav div img {
+  cursor: pointer;
+}
+header {
+  position: relative;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+} 
+nav section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav section ul {
+  position: initial;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0;
+  background: white;
+  height: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  left: 0;
+  top: 0;
+  border: solid green;
+  padding: 20px;
+}
+nav section ul li {
+  position: relative;
+  bottom: 8px;
+}
+nav section div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.bx-menu {
+  display: none;
+  visibility: hidden;
+  position: relative;
+  top: 2px;
+  font-size: 28px;
+}
+nav div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+nav div .basket {position: relative;}
+nav div .disp {
+  position: absolute;
+  background: hsl(26, 100%, 55%);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  top: 0;
+  left: 6px;
+  display: none;
+}
+nav div .cart .body {
+  display: flex;
+  flex-direction: column;
+}
+.divI {
+  display: flex;
+  flex-direction: column;
+}
+.cart {
+  font-family: 'Kumbh Sans', sans-serif;
+  position: absolute;
+  width: 330px;
+  background: white;
+  top: 70px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 0 black;
+}
+.cartss {
+  display: none;
+  transition: all 2s ease;
+}
+.cart .const { align-self: flex-start;
+ padding: 20px 20px 4px 20px;}
+ .const-div {
+  display: flex;
+  position: relative;
+  width: 100%;
+ }
+.const-div button {
+  background-color: hsl(26, 100%, 55%);
+  position: absolute;
+  bottom: 2px;
+  right: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.cart hr {
+  width: 100%;
+  border-top: none;
+}
+.cart .items {
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  gap: 40px;
+}
+.sec1 {
+  width: 40%;
+}
+.sec1 .div1 .mobile-controls {
+  display: none;
+}
+.sec1 .div1 img {
+  width: 100%;
+  height: 300px;
+}
+.sec1 .div2 { 
+  display: initial;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+ }
+ .sec1 .div2 img {
+  width: 22%;
+  padding: 15px 0;
+  border-radius: 10px;
+ }
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  width: 50%;
+}
+.sec2 .div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.sec2 .div1 h3 { color: hsl(26, 100%, 55%) }
+.sec2 .div2 {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Kumbh Sans', sans-serif;
+  gap: 20px;
+}
+.sec2 .div2 section { 
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec2 .div2 section div { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.black { font-weight: bold; font-size: 24px;}
+.orange { color: hsl(26, 100%, 55%);
+   background: hsl(25, 100%, 94%);
+  padding: 3px; border-radius: 5px;}
+.gray {
+  text-decoration-line: line-through;
+  color: hsl(219, 9%, 45%);
+}
+.cursor {
+  cursor: pointer;
+}
+.sec2 .div3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sec2 .div3 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: hsl(220, 14%, 75%);
+  border-radius: 5px;
+}
+.sec2 .div3 div p { font-weight: 600;}
+.sec2 .div3 button {
+  padding: 10px;
+  background: hsl(26, 100%, 55%);
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: large;
+}
+.sec2 .div3 button .bx-cart-alt {
+  font-size: larger;
+}
+}

@@ -7,7 +7,7 @@ let addItems = document.querySelector('.add');
 let subItem = document.querySelector('.minus');
 let incItem = document.querySelector('.item-count');
 let cartDisp = document.querySelector('.disp');
-let op = document.querySelector('.black');
+let op = document.querySelector('.blacks');
 let closeButton = document.querySelector('.close-btn');
 
 
@@ -54,6 +54,17 @@ function addItem() {
     div.appendChild(amount);
     div.appendChild(price);
 
+
+    buttonC.addEventListener('click', () => {
+      img.style.display = 'none';
+      div.style.display = 'none';
+      buttonC.style.display = 'none';
+      incItem.innerHTML = 0;
+      cartDisp.style.display = 'none'
+      emptyMessage.innerHTML = 'Thanks for shopping with us :)';
+      emptyMessage.style.display = 'initial';
+      return emptyMessage;
+    })
     //ADDING THE CLASS NAME
 
     img.classList.add('smallI');
@@ -61,16 +72,16 @@ function addItem() {
     imgPrice.classList.add('imgP');
     buttonC.classList.add('btnC');
     if (cartDisp.innerHTML == 0){
-      document.querySelector('.smallI').style.display = 'none';
+      img.style.display = 'none';
       return emptyMessage;
     }
     else {
       emptyMessage.style.display = 'none';
-      let x = 125.00;
+      let x = op.innerHTML;
       count = parseInt(count)
-      console.log(typeof(count))
+      // console.log(typeof(count))
       let result = x * count;
-      price.innerHTML = `$125.00*${count}   $${result}`;
+      price.innerHTML = `$${x}*${count}   $${result}`;
       amount.innerHTML = document.querySelector('.h2').innerHTML;
       buttonC.innerHTML = 'Checkout';
       amount.classList.add('headerr');
@@ -83,6 +94,9 @@ let burger = document.querySelector('.bx-menu');
 let hideMenu = document.querySelector('.hide');
 
 burger.addEventListener('click', () => {
+    // burger.classList.add('bx')
+    // burger.classList.add('bx-x')
+    // burger.classList.add('disappear')
   hideMenu.classList.toggle('active');
 })
 
@@ -110,23 +124,3 @@ function imageChange() {
 
 imageChange()
 
-function mobileChange() {
-  let bacBtn = document.querySelector('.btn-fow');
-  let fowBtn = document.querySelector('.btn-bac');
-  let picTog = document.querySelectorAll('.tog');
-  let mainImage = document.querySelector('.main-img');
-
-  fowBtn.addEventListener('click', () => {
-    mainImage.setAttribute('src', 'images/image-product-1.jpg');
-  })
-  fowBtn.addEventListener('click', () => {
-    mainImage.setAttribute('src', 'images/image-product-2.jpg')
-  })  
-  fowBtn.addEventListener('click', () => {
-    mainImage.setAttribute('src', 'images/image-product-3.jpg')
-  })  
-  fowBtn.addEventListener('click', () => {
-     mainImage.setAttribute('src', 'images/image-product-4.jpg')
-  })
-}
-mobileChange()

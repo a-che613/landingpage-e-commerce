@@ -173,6 +173,9 @@ main {
   font-family: 'Kumbh Sans', sans-serif;
   gap: 20px;
 }
+.sec2 .div2 p {
+  line-height: 25px;
+}
 .sec2 .div2 section { 
   display: flex; 
   flex-direction: row;

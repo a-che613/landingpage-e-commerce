@@ -24,13 +24,14 @@ nav section ul {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
   padding: 20px;
   background: white;
   height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
   left: -100%;
   width: 50%;
+  transition: all 1.5s ease-in;
 }
 nav section ul.active {
   left: 0;
@@ -119,9 +120,9 @@ nav div .cart .body {
 main {
   width: 100%;
 }
-.sec1 .div1 {
+/* .sec1 {
   position: relative;
-} 
+}  */
 .sec1 .div1 .mobile-controls {
   display: flex;
   width: 100%;
@@ -129,8 +130,8 @@ main {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 50%;
-}
+  top: 53%;
+} 
 .mobile-controls button {
   font-size: 20px;
   font-weight: bolder;
@@ -151,6 +152,7 @@ main {
   width: 100%;
   height: 300px;
 }
+
 .sec1 .div2 { display: none; }
 .sec2 {
   display: flex;
@@ -253,40 +255,56 @@ main {
 
 
 @media  screen and (min-width: 768px) {
-  hr.head{ display: none; 
-    width: 100%;}
-body {overflow-x: scroll;}
-.bx, nav section div img, nav div img {
+ hr.heaD{
+  display: initial; 
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-bottom: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav section div img, nav div img {
   cursor: pointer;
 }
 header {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 70%;
 } 
 nav section {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 40px;
 }
 nav section ul {
   position: initial;
   z-index: 0;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
   padding: 0;
   background: white;
   height: 0;
   font-family: 'Kumbh Sans', sans-serif;
   left: 0;
   top: 0;
-  border: solid green;
+  /* border: solid green; */
   padding: 20px;
 }
 nav section ul li {
@@ -300,7 +318,6 @@ nav section div {
 }
 .bx-menu {
   display: none;
-  visibility: hidden;
   position: relative;
   top: 2px;
   font-size: 28px;
@@ -376,22 +393,41 @@ nav div .cart .body {
   padding-bottom: 30px;
   padding-top: 10px;
 }
+
+.btnC {
+  cursor: pointer;
+}
 main {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
-  padding: 50px;
-  gap: 40px;
+  gap: 60px;
+  /* border: solid red; */
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 .sec1 {
-  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 35%;
+  /* border: solid magenta; */
 }
 .sec1 .div1 .mobile-controls {
   display: none;
 }
 .sec1 .div1 img {
   width: 100%;
-  height: 300px;
+  height: 350px;
+  transition: all 1.5s ease;
+  border-radius: 10px;
+}
+.sec1 .div1 img:hover {
+  width: 105%;
+  transform: rotate(-2deg);
+  box-shadow: 1px 1px 6px 0 black;
 }
 .sec1 .div2 { 
   display: initial;
@@ -402,15 +438,19 @@ main {
  }
  .sec1 .div2 img {
   width: 22%;
-  padding: 15px 0;
   border-radius: 10px;
+  background-size: cover;
+ }
+ .sec1 .div2 img:active {
+  width: 20%;
  }
 .sec2 {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
   gap: 20px;
-  width: 50%;
+  width: 40%;
+  /* border: solid green; */
 }
 .sec2 .div1 {
   display: flex;
@@ -427,8 +467,8 @@ main {
 }
 .sec2 .div2 section { 
   display: flex; 
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .sec2 .div2 section div { 
@@ -450,8 +490,9 @@ main {
 }
 .sec2 .div3 {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .sec2 .div3 div {
   display: flex;
@@ -461,6 +502,7 @@ main {
   padding: 10px;
   background: hsl(220, 14%, 75%);
   border-radius: 5px;
+  width: 30%;
 }
 .sec2 .div3 div p { font-weight: 600;}
 .sec2 .div3 button {
@@ -476,6 +518,8 @@ main {
   justify-content: center;
   gap: 5px;
   font-size: large;
+  width: 60%;
+  cursor: pointer;
 }
 .sec2 .div3 button .bx-cart-alt {
   font-size: larger;
